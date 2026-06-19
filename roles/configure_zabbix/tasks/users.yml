@@ -9,17 +9,17 @@
       - "Zabbix administrators"
     state: present
 
-    - name: Create user Matěj Vaníček
+    - name: Create user odvarkas
   community.zabbix.zabbix_user:
-    username: mvanicek
-    name: Matěj
-    surname: Vaníček
+    username: odvarkas
+    name: Štěpán
+    surname: Odvárka
     passwd: "22Heslo74"
     role_name: "User role"
     usrgrps:
       - "Guests"
     user_medias:
       - mediatype: Email
-        sendto: "vanicek.matej@student.sposdk.cz"
+        sendto: "odvarka.stepan@student.sposdk.cz"
         active: 0
     state: present
